@@ -7,11 +7,12 @@
     --font-family2:'Roboto', sans-serif;
     --primary-color:#000000;
     --second-color:#150050;
+    --terceira-color:rgb(243, 243, 243);
 }
 .conteiner-menu{
     width: 100%;
     height: 10em;
-    background-color: #000000;
+    background-color: var(--primary-color);
 
 }
 
@@ -30,9 +31,15 @@ nav {
 
 nav ul {
     display: inline;
-    color: aliceblue;
+    color: var(--terceira-color);
     padding-left: 4em;
     font-size: 24px;
+   
+    
+}
+nav a {
+    text-decoration: none;
+    color: var(--font-famaly);
 }
 
 .foto-banner{
@@ -104,4 +111,32 @@ nav ul {
     width: 16.4em;
     float: right;
     margin-right: 16em;
+ }
+
+ .rodape {
+        width: 100%;
+        height: 4em;
+        background-color: var(--primary-color);
+        color:var(--terceira-color);
+        font-size: 2em;
+        text-align: center;        
+        padding-top: 1.4em;
+        margin-top: 8em;
+
+ }
+
+ /* Botão da pagina Filmes */
+
+ .btn {
+    margin-top: 1em;
+    width: 12em;   
+    height: 4em;
+    border: none;
+    background-color: var(--primary-color);
+    
+ }
+ .btn a {
+    text-decoration: none;
+    color: var(--terceira-color);
+    font-size: 1.2em;
  }
