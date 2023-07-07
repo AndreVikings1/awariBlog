@@ -21,19 +21,31 @@
                 </li>
             </nav>       
     </div>
-       <h1>Mande sua dúvida</h1>
+       <h1 class="titulo-forms">Mande sua dúvida</h1>
 
         <div class="formulario" id="formulario">
-            <form action="form">
+            <form action="form" id="form">
                 <label for="nome">Nome</label>
-                <input type="nome">
+                <input type="text" name="nome" id="nome">
 
                 <label for="email">Email</label>
-                <input type="email">
+                <input type="text" name="email">
 
-                <textarea name="msg" id="msg" cols="30" rows="10">                   
+                <label for="mensagem">Mensagem</label>
+                <textarea name="msg" id="msg" cols="90" rows="10">                   
                 </textarea>
 
-                    <button>Enviar</button>
+                    <button class="btn-forms" id="btn-forms">Enviar</button>
             </form>
         </div>
+           
+                <div id="alerta">
+                    
+                   
+
+                </div>
+              
+
+            <script src="javaScript/main.js"></script>
+    </body>
+    </html>
