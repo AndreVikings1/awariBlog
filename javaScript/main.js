@@ -23,6 +23,26 @@ const result = []
    function dadosDaTela(dados) {
 
        alerta.classList.add('alerta')
+       const elemento = document.createElement('p')
+         alerta.appendChild(elemento)
 
+         const btnConfirmar = document.createElement('button')
+         btnConfirmar.classList.add('btn-confirmar')
+         btnConfirmar.innerHTML += ` Confirmar`
         
+
+      // <button class="btn-confirmar">Confirmar</button>
+
+       elemento.innerHTML += `
+            Nome: ${dados.nome} <br>
+            Email:${dados.email} <br>
+            Mensagem: ${dados.msg}
+       `
+       alerta.appendChild(btnConfirmar)
+       btnConfirmar.addEventListener('click', envioDeDados)
+     
+   }
+
+   function envioDeDados() {
+     location.reload()
    }
